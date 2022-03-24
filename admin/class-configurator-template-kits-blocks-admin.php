@@ -283,7 +283,7 @@ class Blank_Elements_Pro_Admin_Settings {
 		$cf7    = is_plugin_active( 'contact-form-7/wp-contact-form-7.php' );
 		$default_list = [
 			'breadcrumbs', // This should match the name of the folder located inside the Modules folder - Your widget/element name!
-			'button', 
+			'button',
 			//'counter',need to rework
 			//'countdown',need to rework
             'contact-form-seven',
@@ -302,18 +302,21 @@ class Blank_Elements_Pro_Admin_Settings {
 		}
 		return $default_list;
 	}
+
+	
+	//single shop page
 	public static function product_page_style($package = null){
 		$package = ($package != null) ? $package : self::PACKAGE_TYPE;
 		
 		$default_list = [
-			'style1'=>['style1',Configurator_Template_Kits_Blocks_URL . 'assets/images/spp_style1.jpg'], 
-			'style2'=>['style2',Configurator_Template_Kits_Blocks_URL . 'assets/images/spp_style2.jpg'], 
-			'style3'=>['style3',Configurator_Template_Kits_Blocks_URL . 'assets/images/spp_style3.jpg'], 
+			'style1'=>['style1',Configurator_Template_Kits_Blocks_URL . 'assets/images/style1.jpg'], 
+			'style2'=>['style2',Configurator_Template_Kits_Blocks_URL . 'assets/images/style2.jpg'], 
+			'style3'=>['style3',Configurator_Template_Kits_Blocks_URL . 'assets/images/style3.jpg'], 
 		];
 		
 		return $default_list;
 	}
-
+	
 	public static function display_breadcrumb($package = null){
 		$package = ($package != null) ? $package : self::PACKAGE_TYPE;
 		
@@ -334,21 +337,28 @@ class Blank_Elements_Pro_Admin_Settings {
 		
 		return $default_list;
 	}
-	public static function cart_button($package = null){
+	
+	
+	public static function default_modules($package = null){
 		$package = ($package != null) ? $package : self::PACKAGE_TYPE;
-		
 		$default_list = [
-			'show', 
-			'hide', 
+			'header-footer',
 		];
-		
+        
 		return $default_list;
 	}
-	public static function advanced_f($package = null){
+
+
+	//shop page
+
+	public static function shop_page_style($package = null){
 		$package = ($package != null) ? $package : self::PACKAGE_TYPE;
 		
 		$default_list = [
-			'a m p',			 
+			'2', 
+			'3', 
+			'4',
+			'6',  
 		];
 		
 		return $default_list;
@@ -363,14 +373,29 @@ class Blank_Elements_Pro_Admin_Settings {
 		
 		return $default_list;
 	}
-	public static function default_modules($package = null){
+	public static function display_pagination($package = null){
 		$package = ($package != null) ? $package : self::PACKAGE_TYPE;
+		
 		$default_list = [
-			'header-footer',
+			'show', 
+			'hide', 
 		];
-        
+		
 		return $default_list;
 	}
+
+
+	//advance
+	public static function advanced_f($package = null){
+		$package = ($package != null) ? $package : self::PACKAGE_TYPE;
+		
+		$default_list = [
+			'a m p',			 
+		];
+		
+		return $default_list;
+	}
+
 
 	public function input($input_options){
         $defaults = [

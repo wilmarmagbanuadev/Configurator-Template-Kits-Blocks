@@ -360,10 +360,10 @@ class Widget_Site_Logo extends Widget_Base {
 			[
 				'label'     => __( 'Border Color', 'blank-elements-pro' ),
 				'type'      => Controls_Manager::COLOR,
-				'scheme'    => [
-					'type'  => Scheme_Color::get_type(),
-					'value' => Scheme_Color::COLOR_1,
-				],
+				// 'scheme'    => [
+				// 	'type'  => Scheme_Color::get_type(),
+				// 	'value' => Scheme_Color::COLOR_1,
+				// ],
 				'condition' => [
 					'site_logo_image_border!' => 'none',
 				],
@@ -523,10 +523,10 @@ class Widget_Site_Logo extends Widget_Base {
 				'selectors' => [
 					'{{WRAPPER}} .widget-image-caption' => 'color: {{VALUE}};',
 				],
-				'scheme'    => [
-					'type'  => Scheme_Color::get_type(),
-					'value' => Scheme_Color::COLOR_3,
-				],
+				// 'scheme'    => [
+				// 	'type'  => Scheme_Color::get_type(),
+				// 	'value' => Scheme_Color::COLOR_3,
+				// ],
 			]
 		);
 
@@ -546,7 +546,7 @@ class Widget_Site_Logo extends Widget_Base {
 			[
 				'name'     => 'caption_typography',
 				'selector' => '{{WRAPPER}} .widget-image-caption',
-				'scheme'   => Scheme_Typography::TYPOGRAPHY_3,
+				//'scheme'   => Scheme_Typography::TYPOGRAPHY_3,
 			]
 		);
 

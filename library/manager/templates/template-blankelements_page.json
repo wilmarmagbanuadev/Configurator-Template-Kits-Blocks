@@ -20,24 +20,6 @@
                 "modified": "2020-05-03 09:23:04"
             },
             {
-                "template_id": 1,
-                "title": "Test Add New Page",
-                "description": "test only",
-                "categories": [
-                    "agency"
-                ],
-                "keywords": [],
-                "source": "blankelements_api",
-                "hasPageSettings": "",
-                "thumbnail": "test_only.jpg",
-                "preview": "test_only.jpg",
-                "livelink": "https://products.blankelements.com/agency/",
-                "type": "blankelements_page",
-                "author": "BloomPixel",
-                "package": "free",
-                "modified": "2020-05-03 09:23:04"
-            },
-            {
                 "template_id": 2,
                 "title": "Homepage Blog",
                 "description": "",

@@ -348,6 +348,44 @@ final class Blankelements_Pro_Extension_Init {
 			$default_options['module-list'] = $default_module;
 		}
 
+		//single shop page
+		$default_layout = Configurator_Template_Kits_Blocks_Admin_Settings::product_page_style();
+		if( ! empty( $default_layout ) ) {
+			$default_options['product_page_style-list'] = $default_layout;
+		}
+		
+		$breadcrumb_option = Configurator_Template_Kits_Blocks_Admin_Settings::display_breadcrumb();
+		if( ! empty( $breadcrumb_option ) ) {
+			$default_options['display_breadcrumb-option'] = $breadcrumb_option;
+		}
+		$related_products_option = Configurator_Template_Kits_Blocks_Admin_Settings::related_products();
+		if( ! empty( $related_products_option ) ) {
+			$default_options['related_products-option'] = $related_products_option;
+		}
+
+			//shop page
+		$shop_page_style = Configurator_Template_Kits_Blocks_Admin_Settings::shop_page_style();
+		if( ! empty( $shop_page_style ) ) {
+			$default_options['shop_page_style'] = $shop_page_style;
+		}
+		$product_per_page = Configurator_Template_Kits_Blocks_Admin_Settings::product_per_page();
+		if( ! empty( $product_per_page ) ) {
+			$default_options['product_per_page-count'] = $product_per_page;
+		}
+
+		$display_pagination = Configurator_Template_Kits_Blocks_Admin_Settings::display_pagination();
+		if( ! empty( $display_pagination ) ) {
+			$default_options['display_pagination'] = $display_pagination;
+		}
+		
+
+		//advanced
+		$advanced_f = Configurator_Template_Kits_Blocks_Admin_Settings::advanced_f();
+		if( ! empty( $advanced_f ) ) {
+			$default_options['advanced_f'] = $advanced_f;
+		}
+
+		
 		return $default_options;
 	}
 
